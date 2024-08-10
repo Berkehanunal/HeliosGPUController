@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "HeliosGPUController"
+version = "1.5"
+dependencies = [
+'PyYAML~=6.0.1',
+'requests~=2.31.0',
+'geocoder~=1.38.1',
+'pytz~=2023.3.post1',
+'numpy~=1.26.2',
+'matplotlib~=3.8.2',
+'timezonefinder~=6.4.0',
+'suntime~=1.2.5',
+'geopy~=2.4.1'
+]
+requires-python = ">=3.8"
+authors = [
+  {name = "Lasse Mueller", email = "mueller.lasse.ltd@gmail.com"},
+  {name = "Bao Nguyen", email = "baotrani@yahoo.de"},
+  {name = "Berkehan Unal", email = "unal@tnt.uni-hannover.de"}
+]
+description = "Helios GPU Controller dynamically reduces Graphics Processing Unit (GPU) clock speeds by leveraging insights from the current energy mix and meteorological data. The goal is to reduce power consumption of non-renewable sources."
+readme = "README.md"
+license = {file = "LICENSE.txt"}

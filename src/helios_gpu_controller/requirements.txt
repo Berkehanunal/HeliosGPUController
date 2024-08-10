@@ -1,0 +1,9 @@
+PyYAML==6.0.1
+requests==2.31.0
+geocoder==1.38.1
+pytz==2023.3.post1
+numpy==1.26.2
+matplotlib==3.8.2
+timezonefinder==6.4.0
+suntime==1.2.5
+geopy==2.4.1

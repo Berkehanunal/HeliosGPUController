@@ -1,0 +1,14 @@
+helios:
+    use_helios_on_init: False  # if set to false, GPU throttling won't be enabled by instantiating HeliosGPUController, but only with calling throttle_gpu() method
+    devices: ToDo  # List of all devices that the HeliosGPUController has access to
+    min_clock_speed_percent: 0.5 # minimum GPU clock frequency in percent. Helios recommendation: 0.5. Going higher than 0.5 reduces Helios' effectiveness.
+    update_rate: 15 # Update Rate in minutes. Update rate determines, how often the GPU clock frequency is updated.
+solar:
+    using_solar_panels: False # Enable Helios solar
+    avg_power_consumption_per_year: 2500 # Average power consumption of your household. In kWh
+    max_power_of_home_pc: 550 # Maximum power consumption of your computer. In Watts
+    declination: 37 # Declination of your solar panels
+    azimuth: 0 # Azimuth of your solar panels. 0 - south, 90 - west, 180 - north, 270 - east
+    peak_kw: 2.5 # Peak Output of your photovoltaic system
+other:
+    need_user_permission: False # if set to true, prompt a permission window, before Helios reduces your GPU frequency
